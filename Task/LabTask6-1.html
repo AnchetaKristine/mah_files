@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LabTask6</title>
+
+<style>
+
+    .p1 input{
+        display: block;
+        width: 300px;
+        height: 17px;
+        padding: 3px;
+        border: 1px solid;
+        color: rgb(95, 94, 94);
+        border-radius: 3px;
+    }
+
+    .p1 input:hover{
+        background-color: rgb(245, 245, 245);
+    }
+
+    #second{
+        float: left;
+        width: 230px;
+        height: 100px;
+    }
+
+    #button{
+        float:left;
+        margin-top: 25px;
+        margin-left: 20px;
+    }
+
+    .button{
+        display: inline-block;
+        width: 50px;
+        height: 25px;
+        border: 1px solid;
+        border-radius: 4px;
+        text-align: center;
+        background-color: rgb(221, 218, 218);
+        cursor: pointer;
+    }
+
+    .button:hover{
+        background-color: rgb(228, 225, 225);
+    }
+
+    #third{
+        clear: both;
+        text-align: center;
+        margin-top: 10;
+        }
+
+    img{
+        width: 70%;
+    }
+
+    .p3 input{
+        display: block;
+        margin:auto;
+        width: 80%;
+        height: 20px;
+        border: 1px solid gray;
+        border-radius: 10px;
+    }
+
+
+        .P1 input{
+        display:inline-block;
+        margin-top: 20px;
+        width: 204px;
+        height: 20px;
+        padding: 3px;
+        border: 1px solid;
+        border-radius: 3px;
+        color: rgb(95, 94, 94);
+        border-color: rgb(95, 94, 94);
+    }
+
+    .P2 input{
+        display:block;
+        width: 420px;
+        height: 20px;
+        padding: 3px;
+        border: 1px solid;
+        border-radius: 3px;
+        color: rgb(95, 94, 94);
+        border-color:rgb(95, 94, 94);
+    }
+
+    .P1 input:hover, .P2 input:hover{
+        background-color:rgb(245, 245, 245)
+    }
+
+    .sign:hover{
+        background-color:#1563c9;
+    }
+
+    .sign{
+        display: block;
+        width: 428px;
+        height: 30px;
+        text-align: center;
+        font-family:sans-serif;
+        color: white;
+        background-color: #1877F2;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+    }
+
+    #Sec2{
+        width: fit-content;
+        height: fit-content;
+        margin: 0;
+    }
+
+    .P3 input{
+        display:block;
+        margin-top: 8px;
+        width: 300px;
+        height: 30px;
+        padding: 9px;
+        border: none;
+        border-radius: 3px;
+        color: rgb(95, 94, 94);
+        background-color: rgb(235, 235, 235);
+    }
+    
+    .P4, .P5{
+        display:inline-block;
+        text-align: center;
+        margin-top: 8px;
+        height: 40px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        padding: 14px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .P4{background-color: rgb(0, 0, 0); color: white;}
+    .P5{ margin-left:10px; rgb(235, 235, 235); color: black;}
+
+    .P3 input:hover{background-color:rgb(221, 221, 221);}
+    .P4:hover{background-color:rgb(21, 21, 21);}
+    .P5:hover{background-color:rgb(209, 209, 209);}
+
+    fieldset{
+        width: fit-content;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+
+</style>
+
+</head>
+<body>
+<div>
+
+    <fieldset>
+    <div id="first">
+        <p class="p1"> <input type="text" placeholder="Name"></p>
+        <p class="p1"> <input type="text" placeholder="Email"></p>
+    </div>
+    </fieldset>
+
+    <fieldset>
+    <div id="second">
+        <p class="p2">
+        Thanks for chatting with our customer
+        support, Would you like to take our quick survey?
+        </p>
+    </div>
+
+    <div id="button">
+        <button class="button" type="submit">Yes</button>
+        <button class="button" type="submit">No</button>
+    </div>
+    </fieldset>
+
+
+    <fieldset>
+    <div id="third">
+        <img src="image/google.jpg">
+        <p class="p3"><input type="text" placeholder="Search Google or type a URL"></p>
+    </div>
+    </fieldset>
+
+    <fieldset>
+<div id="Sec1">
+    <span class="P1"><input type="text" placeholder="First Name"></span>
+    <span class="P1"><input type="text" placeholder="Last Name"></span>
+    <p class="P2"><input type="email" placeholder="Email"></p>
+
+    <button class="sign" type="submit">Sign Up</button>
+</div>
+</fieldset>
+
+<fieldset>
+<div id="Sec2">
+    <h1 style="font-family:Verdana, Geneva, Tahoma, sans-serif;">Request a ride now</h1>
+
+    <p class="P3"><input type="text" placeholder="Enter pickup location"></p>
+    <p class="P3"><input type="text" placeholder="Enter destination"></p>
+
+    <button class="P4" type="submit">Request now</button>
+    <button class="P5" type="submit">Schedule for later</button>
+</div>
+</fieldset>
+
+</div>
+</body>
+</html>
