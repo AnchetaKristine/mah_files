@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Sheet</title>
+
+    <style>
+        .header{
+            background-color: rgb(79, 89, 110);
+            color: white;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+            position: fixed;
+        }
+        .sidebar{
+            background-color: rgb(97, 77, 116);
+            color: white;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 70px;
+            top: 50px;
+        }
+
+        .x{
+            background-color: red;
+            color: white;
+            top: 0;
+            right: 0;
+            position: absolute;
+        }
+
+    .div1{
+        background-color: lightblue;
+        height: 200px;
+        width: 200px;
+        position: static;
+    }
+        
+    .div2{
+        background-color: rgb(230, 173, 195);
+        height: 200px;
+        width: 200px;
+        position: relative;
+        z-index: -1;
+    }
+
+    body{
+        height: 3000px;
+        padding-top: 70px;
+        padding-left: 90px;
+    }
+
+    .five{background-color: black;
+    color: white;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="header">header</div>
+    <div class="sidebar">sidebar
+        <div class="x"> x </div>
+    </div>
+
+    <div class="div1"></div>
+    <div class="div2">
+        <div class="five">500</div>
+    </div>
+
+    <div></div>
+    <div></div>
+</body>
+</html>
