@@ -20,11 +20,11 @@ body {
     background:  #ebf1f5;
     font-family: 'Poppins', sans-serif;
     color: #1a1a1a;
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 html, body {
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 a { text-decoration: none; }
@@ -135,6 +135,7 @@ nav { width: 100%; }
     padding: 10px 20px;
     width: 100%;
     flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 
@@ -143,15 +144,14 @@ nav { width: 100%; }
     align-items: flex-start;
     width: clamp(120px, 20vw, 300px);
     flex-shrink: 0;
+    align-self: flex-start;
 }
 
 .id img {
     display: block;
     width: 85%;
-    margin-top: clamp(80px, -20vw, -980px);
     position: sticky;
     top: 25px;
-    height: fit-content;
     border-radius: 500px;
 }
 
@@ -295,9 +295,100 @@ footer {
 }
 
 
+@media (min-width: 801px) {
+    .my {
+        position: static;
+        transform: none;
+        font-size: 28px;
+        text-align: center;
+        margin-left: -670px;
+    }
+
+    .title-block {
+        margin-top: 100px;
+    }
+
+    .title-row {
+        transform: scaleY(1.6);
+    }
+
+    .image-wrapper img{
+        width: 200px;
+        margin-top: -65px;
+    }
+
+    .port  {font-size: 180px; margin-right: clamp(5px, .5vw, 15px); letter-spacing: 10px;}
+    .folio {font-size: 180px; margin-left:  clamp(-20px, -2vw, -60px); letter-spacing: 10px;}
 
 
-@media (max-width: 1000px) {
+    .id, .id img{position: sticky;}
+
+
+    .about h1,
+    #secondSection h2 {
+        margin-left: 0;
+    }
+
+    .about p, .aboutMe p {
+        margin-left: 0;
+    }
+
+    #secondSection {
+        padding: 5px 16px;
+        margin-top: 20px;
+    }
+
+    .options {
+        gap: 4px;
+    }
+
+    .options li a {
+        padding: 10px 14px;
+    }
+
+    .id {
+        position: sticky;
+        top: 25px;
+        align-self: flex-start;
+        margin-top: 80px;
+    }
+
+    .id img {
+        margin-top: 0;
+        width: 90%;
+        position: sticky;
+        top: 25px;
+    }
+
+    .aboutEd {
+        margin-top: 0;
+    }
+
+
+    .title-row {
+        font-size: 100px;
+    }
+
+    .image-wrapper {
+        width: 120px;
+        margin-top: -50px;
+    }
+
+    .my {
+        font-size: 70px;
+        top: 40px;
+    }
+
+    .options {
+        gap: 4px;
+    }
+
+    .options li a {
+        padding: 7px 11px;
+    }
+}
+
+@media (min-width: 472px) and (max-width: 800px) {
     .my {
         position: static;
         transform: none;
@@ -324,9 +415,8 @@ footer {
     .folio { margin-left:  clamp(-38px, -6vw, -70px); }
 
 
-    .id, .id img{position: static;}
+    .id, .id img{position: sticky;}
 
-.aboutEd{margin-top: -300px;}
 
     .about h1,
     #secondSection h2 {
@@ -349,17 +439,25 @@ footer {
     .options li a {
         padding: 10px 14px;
     }
-}
 
+    .id {
+        position: sticky;
+        top: 25px;
+        align-self: flex-start;
+        margin-top: 0;
+        margin-top: 35px;
+    }
 
-@media(max-width: 1000px) {
-    .id { position: sticky;
-        margin-top: 370px;}
-    
     .id img {
-        margin-top: -600px;
+        margin-top: 0;
         width: 90%;
         position: sticky;
+        top: 25px;
+    }
+
+
+    .aboutEd {
+        margin-top: 0;
     }
 
 
@@ -375,10 +473,6 @@ footer {
     .my {
         font-size: 44px;
         top: 40px;
-    }
-
-    #secondSection {
-        margin-top: 250px;
     }
 
     .options {
