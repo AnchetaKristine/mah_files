@@ -23,6 +23,10 @@ body {
     overflow-x: hidden;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 a { text-decoration: none; }
 
 #firstSection {
@@ -45,6 +49,7 @@ a { text-decoration: none; }
     color: #1a1a1a;
     left: 50%;
     transform: translateX(calc(-50% - clamp(100px, 25vw, 480px)));
+    white-space: nowrap;
 }
 
 .title-block {
@@ -385,7 +390,6 @@ footer {
     }
 }
 
-
 @media(max-width:471px){
 
     .my{margin-left: -280px;}
@@ -428,6 +432,7 @@ footer {
         margin-top: -50px;
     }
 }
+
 </style>
 </head>
 <body>
@@ -591,7 +596,7 @@ footer {
             </aside>
         </a>
 
-        <a href="Task/FinalTask.html">
+        <a href="Task/FinalTaskCode.html">
             <aside class="allTask">
                 <span class="tittleTasks">Final Task:</span>
                 <span>Style Sheet</span>
