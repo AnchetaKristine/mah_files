@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
 
+<style>
+
+body{background: #ebf1f5;}
+
+p{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    ;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 45px;
+    margin-bottom: 40px;
+}
+
+.Output {
+    display: inline-flex;
+    font-size: 110%;
+    width: 40%;
+    height: 40px;
+    border: solid white 1px;
+    background-color: rgb(70, 88, 146);
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.Output:hover { background-color: rgb(81, 92, 121); }
+.Output:active { background-color: rgb(114, 131, 177); }
+
+img{display: block;
+    margin: 0 auto;
+    max-width: 90%;}
+
+    </style>
+</head>
+<body>
+    <h1>Portfolio</h1>
+    <p>Sample Output</p>
+    <img src="image/portfolio.png" alt="Portfolio Output">
+
+
+<div class="buttons">
+    <a class="Output" href="https://anchetakristine.github.io/mah_files/">Actual Output</a>
+    <a class="Output" href="https://github.com/AnchetaKristine/mah_files/blob/d6824a53d80c3a5abb0e429b19c9d890a07c0663/index.html">Source Code</a>
+    <a class="Output" href="https://github.com/AnchetaKristine/mah_files.git">Github Link</a>
+
+</div>
+</body>
+</html>
